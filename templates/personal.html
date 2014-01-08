@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Personal Information</title>
+{% endblock %}
+
+{% block content %}
+<p>I grew up in the suburbs of Birmingham, Alabama.  After graduating high school,
+I decided to try life in the big city, so I attended college at Columbia University, 
+majoring in Math and Economics.</p>
+<p>After college, I spent two years teaching through Teach For America.  As part of the 
+Greater Newark Corps, I taught high schoolers math and programming in Passaic, NJ.  During
+that time, I also taught myself how to program and wrote the curriculum for an 
+introductory Java course.</p>
+<p>
+I'm currently back at Columbia doing a Masters degree in Computer Science, with a specialization
+in machine learning.  I'm thrilled to be back in NYC and to be furthering my education.
+</p>
+<p>I'm also engaged!</p>
+<img id="engagement-photo" src="{{ url_for('static',filename='img/Sam_Sherin_MNH.jpg') }}">
+{% endblock %}

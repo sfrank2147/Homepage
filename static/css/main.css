@@ -1,0 +1,51 @@
+/* Broad descriptions */
+body {
+    width: 100%;
+    /* 
+    Background image taken from Wikimedia Commons
+    https://en.wikipedia.org/wiki/File:New_York_Midtown_Skyline_at_night_-_Jan_2006_edit1.jpg
+    */
+    background-image: url(../img/nyc_background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #999;
+}
+
+#all-content {
+    background-image: url(../img/fresh_snow_transparent_90.png);
+    /*background-image: url({{ url_for('static',filename='img/fresh_snow.png') }});*/
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-attachment: scroll;
+    
+}
+
+#content {
+    border-right: solid;
+    margin-bottom: 10px;
+}
+
+/* Photos */
+#homepage-photo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#engagement-photo {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.centered-content-container {
+    text-align: center;
+}

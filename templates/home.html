@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Samuel Frank's Homepage</title>
+{% endblock %}
+
+{% block content %}
+<div class="centered-content-container">
+<h3>Welcome to Samuel Frank's homepage!</h3>
+<img src="{{ url_for('static',filename='img/Sam_Homepage.jpg') }}" id="homepage-photo">
+</div>
+<p>I'm currently a Masters Student at Columbia University, studying Computer Science
+with a concentration in Machine Learning.  I love learning new technologies, with my
+current focus being python and the Flask framework.</p>
+<p>I'm a huge nerd about machine learning, with a particular interest in
+applying machine learning to NLP problems on the web.  In addition, I was
+a teacher in my previous life, and I still try to stay connected to education news
+and ed policy, especially in Newark and NYC.</p>
+{% endblock %}

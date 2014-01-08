@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}
+        <title>Samuel Frank's Homepage</title>
+        {% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <!-- Bootstrap! -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"
+    </head>
+    <body>
+        <div id="all-content" class="container">
+            <h1><a href="#">Samuel Frank's Homepage</a></h1>
+            <div class="navbar">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+							<li><a href="{{ url_for('personal') }}">Personal</a></li>
+							<li><a href="{{ url_for('resume') }}" target="_blank">Resume</a></li>
+							<li><a href="http://www.github.com/sfrank2147" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+            </div>
+        
+			<div class="row">
+			    <!-- content -->
+			    <div id="content" class="col-xs-8">
+			        {% block content %}
+			        {% endblock %}
+			    </div>
+			    
+			    <!-- sidebar on right -->
+			    <div id="sidebar" class="col-xs-4">
+			        <p><strong>People/Sites I Read:</strong><p>
+					<p>Programming:</p>
+					<ul class="sidebar-list">
+						<li><a href="https://research.microsoft.com/en-us/people/mickens/" target="_blank">James Mickens</a></li>
+						<li><a href="www.reddit.com/r/programming" target="_blank">/r/programming</a></li>
+						<li><a href="news.ycombinator.com" target="_blank">Hacker News</a></li>
+					
+					</ul>
+					<p>Teaching:</p>
+					<ul class="sidebar-list">
+						<li><a href="http://blog.mrmeyer.com/" target="_blank">Dan Meyer</a></li>
+					</ul>
+					<p>Other:</p>
+					<ul class="sidebar-list">
+						<li><a href="http://www.slate.com/blogs/moneybox.html" target="_blank">Matthew Yglesias</a></li>
+						<li><a href="http://www.marginalrevolution.com">Tyler Cowen</a></li>
+						<li><a href="http://www.seriouseats.com" target="_blank">Serious Eats</a></li>
+						<li><a href="http://www.smittenkitchen.com" target="_blank">Smitten Kitchen</a></li>
+					</ul>
+			    </div>
+			</div>
+		
+		</div>
+        <!-- need to import jQuery for Bootstrap to work -->
+        
+        <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        
+    </body>
+</html>
